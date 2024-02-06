@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Revisão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="total">
+  <div id="esquerda">
+      <h1>Calculadora com API</h1>
+<div id="espaço">
+  <div>
+    <input type="text" id="display" readonly>
+  </div>
+
+  <div>
+    <button onclick="numero('1')">1</button>
+    <button onclick="numero('2')">2</button>
+    <button onclick="numero('3')">3</button>
+    <button onclick="numero('+')">+</button>
+  </div>
+
+  <div>
+    <button onclick="numero('4')">4</button>
+    <button onclick="numero('5')">5</button>
+    <button onclick="numero('6')">6</button>
+    <button onclick="numero('-')">-</button>
+  </div>
+
+  <div>
+    <button onclick="numero('7')">7</button>
+    <button onclick="numero('8')">8</button>
+    <button onclick="numero('9')">9</button>
+    <button onclick="numero('*')">*</button>
+  </div>
+
+  <div>
+    <button onclick="limpar()">C</button>
+    <button onclick="numero('0')">0</button>
+    <button onclick="igual()">=</button>
+    <button onclick="numero('/')">/</button>
+  </div>
+    </div>
+ </div>
+ <div id="direita">
+  <h2>Histórico de Operações</h2>
+  <ul id="historico"></ul>
+ </div>
+</div>
+
+ <script src="script.js"></script>
+ 
+</body>
+</html>
